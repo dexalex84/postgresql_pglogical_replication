@@ -36,3 +36,6 @@
 
 ## Problems
  Found that replication of truncate command is not working, therefore this type of changing source is disabled now
+ 
+## Links
+https://www.2ndquadrant.com/en/resources/pglogical/pglogical-docs/
