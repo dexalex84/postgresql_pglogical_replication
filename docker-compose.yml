@@ -1,0 +1,21 @@
+  version: "3"
+  services:
+    db_source:
+      restart: always
+      container_name: db_source
+      ports:
+       - 5432:5432
+      image: dexalex/centos7-postgres96:latest
+      environment:
+       - INST_PGLOGICAL=TRUE
+    
+    db_dest:
+      restart: always
+      container_name: db_dest
+      ports:
+       - 5442:5432
+      image: dexalex/centos7-postgres96:latest
+      environment:
+       - INST_PGLOGICAL=TRUE
+
+      
